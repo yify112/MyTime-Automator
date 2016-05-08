@@ -28,7 +28,7 @@ You could also use the Batch files (.bat) to execute the scripts by just double 
 
 ![Enter credentials](./screenshots/enterCredentials.jpg?raw=true "Enter credentials")
 
-![running command showing "opened MyTime" message](screenshots/openedMyTime.jpg?raw=true "showing 'opened mytime' message")
+![running command showing "opened MyTime" message](./screenshots/openedMyTime.jpg?raw=true "showing 'opened mytime' message")
 
 ![Final result displaying fetched attendance](./screenshots/finalResult.jpg?raw=true "Completed process")
 
