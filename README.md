@@ -26,7 +26,7 @@ You could also use the Batch files (.bat) to execute the scripts by just double 
 
 ### Screenshots
 
-![Enter credentials](./screenshots/enterCredentials.jpg?raw=true "Enter credentials")
+![Enter credentials](./screenshots/enterCredentials.JPG?raw=true "Enter credentials")
 
 ![running command showing "opened MyTime" message](./screenshots/openedMyTime.jpg?raw=true "showing 'opened mytime' message")
 
