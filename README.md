@@ -26,15 +26,15 @@ You could also use the Batch files (.bat) to execute the scripts by just double 
 
 ### Screenshots
 
-![Enter credentials](/screenshots/enterCredentials.jpg?raw=true "Enter credentials")
+![Enter credentials](./screenshots/enterCredentials.jpg?raw=true "Enter credentials")
 
 ![running command showing "opened MyTime" message](screenshots/openedMyTime.jpg?raw=true "showing 'opened mytime' message")
 
-![Final result displaying fetched attendance](/screenshots/finalResult.jpg?raw=true "Completed process")
+![Final result displaying fetched attendance](./screenshots/finalResult.jpg?raw=true "Completed process")
 
-![Batch file running](/screenshots/batchFileRunning.jpg?raw=true "Batch file")
+![Batch file running](./screenshots/batchFileRunning.png?raw=true "Batch file")
 
-![Batch file completed](/screenshots/batchFileComplete.jpg?raw=true "Batch file complete")
+![Batch file completed](./screenshots/batchFileComplete.png?raw=true "Batch file complete")
 
 ### Batch file instructions
 * Make sure the .bat file and the appropriate .js file are in the same directory
