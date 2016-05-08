@@ -2,12 +2,13 @@
 
 Hello! This is the MyTime Automator for Wipro™ MyTime. It uses the CasperJS framework to automate some of the repetitive tasks in filling the efforts in MyTime - so as to _save_ **your** time :innocent: :smile:
 
-Just open  the _wipromytimeinternal.js_ or _wipromytimeexternal.js_ file with your prefered text editor and enter your username and password in the appropriate areas inside the appropriate file. Then run the command: 
->`casperjs file_name.js`
+Just open  the _wipromytimeinternal.js_ or _wipromytimeexternal.js_ file with your prefered text editor and enter your username and password in the appropriate areas inside the appropriate file. Then run the command:
 
-with the appropriate filename. The script will automatically login with your credentials and open the MyTime app, then retrive the attendance and update your efforts according to the specified values or default to entering the _training section_ with your _days attendance_.
+`casperjs file_name.js` 
 
-You could also use the Batch files (.bat) to execute the scripts by just double clicking them, it would automatically open up command prompt and run the casperjs command, though this only works on windows. However the ability to just double click a file and have the time upadted automatically truly makes the process even smoother in my opinion :smile:.
+with the appropriate filename in the command prompt. The script will automatically login with your credentials and open the MyTime app, then retrive the attendance and update your efforts according to the specified values or default to entering the _training section_ with your _days attendance_.
+
+You could also use the Batch files (.bat) to execute the scripts by just double clicking them, it would automatically open up command prompt and run the casperjs command, though this only works on windows. However the ability to just double click a file and have the time updated automatically truly makes the process even smoother in my opinion :smile:.
 
 ### Prerequisistes
 
@@ -38,7 +39,7 @@ You could also use the Batch files (.bat) to execute the scripts by just double 
 
 ### Batch file instructions
 * Make sure the .bat file and the appropriate .js file are in the same directory
-* Also make sure that the correct .bat file is run in accordance with the correct .js file, i.e. Internal.bat -> wipromytimeinternal.js and External.bat -> wipromytimeexternal.js
+* Also make sure that the correct .bat file is run in accordance with the correct .js file, i.e. internalBatch.bat -> wipromytimeinternal.js and externalBatch.bat -> wipromytimeexternal.js
 * Just double-click, sit back, relax and enjoy! :bowtie:
 
 ## Copyright
