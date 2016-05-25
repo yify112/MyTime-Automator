@@ -16,7 +16,7 @@ You could also use the Batch files (.bat) to execute the scripts by just double-
 
 ![Enter credentials](./screenshots/enterCredentials.JPG?raw=true "Enter credentials")
 
-![Main GIF showing full process](./screenshots/mainGIF.GIF?raw=true "Main GIF showing full process")
+![Main GIF showing full process](./screenshots/mainGIF.gif?raw=true "Main GIF showing full process")
 
 ![running command and showing "opened MyTime" message](./screenshots/openedMyTime.JPG?raw=true "showing 'opened mytime' message")
 
