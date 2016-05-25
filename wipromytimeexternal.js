@@ -34,7 +34,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //	CasperJS settings
 var casper = require('casper').create({
 	verbose: true,
-	logLevel: 'error', // change from 'error' to 'debug' for extended information
+	logLevel: 'error', // change from 'error' to 'debug' for verbose information
 	pageSettings: {
 		loadPlugins: false,
 		userAgent: 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'
@@ -107,15 +107,23 @@ casper.thenOpen("https://gateway.wipro.com/f5-w-687474703a2f2f6e65776d7977697072
 // Fill form again
 casper.then(function () {
 	"use strict";
-	casper.waitForSelector('.login_btn_main', function () {
+	// OLD METHOD - Use if they ever revert back
+	/*casper.waitForSelector('.login_btn_main', function () {
 		this.echo('login_btn_main loaded');
-	});
+	});*/
 	try {
-		casper.fill('form#logonForm', {
+		// OLD METHOD - Use if they ever revert back
+		/*casper.fill('form#logonForm', {
 			// Enter USERNAME(ADID) and PASSWORD inside the DOUBLE-QUOTES ACCORDINGLY
 			'j_username': '', //Username
 			'j_password': '' //Password
+		}, true);*/
+		casper.fill('div#formsAuthenticationArea', {
+			// Enter USERNAME(ADID) and PASSWORD inside the DOUBLE-QUOTES ACCORDINGLY
+			'UserName': '', //Username
+			'Password': '' //Password
 		}, true);
+		casper.click('span#submitButton');
 	} catch (e) {
 		this.echo(e);
 	}
@@ -124,11 +132,26 @@ casper.then(function () {
 });
 
 //	Open MyTime
-casper.thenOpen('https://gateway.wipro.com/f5-w-687474703a2f2f6e65776d79776970726f2e776970726f2e636f6d$$/irj/portal?NavigationTarget=navurl://e5d876a160ab08c343ce57c12518b5b6', function () {
+// OLD URL,use if they ever revert back
+/*casper.thenOpen('https://gateway.wipro.com/f5-w-687474703a2f2f6e65776d79776970726f2e776970726f2e636f6d$$/irj/portal?NavigationTarget=navurl://e5d876a160ab08c343ce57c12518b5b6', function () {
 	'use strict';
 	casper.echo('Successfully opened MyTime URL');
 	casper.capture('myTime.png');
 	casper.echo('myTime.png captured');
+});*/
+
+//	Open MyTime
+casper.then(function () {
+	'use strict';
+	try {
+		casper.thenOpen('https://mywipro.wipro.com/irj/portal?NavigationTarget=navurl://e5d876a160ab08c343ce57c12518b5b6', function () {
+			casper.echo('Successfully opened MyTime URL');
+			casper.capture('myTime.png');
+			casper.echo('myTime.png captured');
+		});
+	} catch (e) {
+		casper.echo(e);
+	}
 });
 
 //	Directly open main MyTime grid URL

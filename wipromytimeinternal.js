@@ -58,16 +58,22 @@ casper.then(function () {
 		this.echo('Login Button (.login_btn_main) loaded');
 	});
 	try {
-		casper.fill('form#logonForm', {
+		// OLD METHOD - Use if they ever revert back
+		/*casper.fill('form#logonForm', {
 			// Enter USERNAME(ADID) and PASSWORD inside the DOUBLE-QUOTES ACCORDINGLY
 			'j_username': '', //Username
 			'j_password': '' //Password
+		}, true);*/
+		casper.fill('div#formsAuthenticationArea', {
+			// Enter USERNAME(ADID) and PASSWORD inside the DOUBLE-QUOTES ACCORDINGLY
+			'UserName': '', //Username
+			'Password': '' //Password
 		}, true);
 	} catch (e) {
 		this.echo(e);
 		casper.echo('Error in filling the form');
 	}
-	casper.wait(2000);
+	casper.click('span#submitButton');
 	casper.capture('formFilled.png');
 	casper.echo('formFilled.png captured');
 });
