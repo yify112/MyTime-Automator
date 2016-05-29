@@ -34,7 +34,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //	CasperJS settings
 var casper = require('casper').create({
 	verbose: true,
-	logLevel: "error", // change from 'error' to 'debug' for extended information
+	logLevel: "error", // change from 'error' to 'debug' for verbose information
 	pageSettings: {
 		loadPlugins: false,
 		userAgent: 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:45.0) Gecko/20100101 Firefox/45.0'
@@ -54,18 +54,18 @@ casper.start('http://mywipro.wipro.com/irj/portal', function () {
 //	Load Main page and fill form
 casper.then(function () {
 	"use strict";
-	casper.waitForSelector('.login_btn_main', function () {
-		this.echo('Login Button (.login_btn_main) loaded');
-	});
 	try {
 		// OLD METHOD - Use if they ever revert back
+		/*casper.waitForSelector('.login_btn_main', function () {
+			this.echo('Login Button (.login_btn_main) loaded');
+		});*/
 		/*casper.fill('form#logonForm', {
 			// Enter USERNAME(ADID) and PASSWORD inside the DOUBLE-QUOTES ACCORDINGLY
 			'j_username': '', //Username
 			'j_password': '' //Password
 		}, true);*/
 		casper.fill('div#formsAuthenticationArea', {
-			// Enter USERNAME(ADID) and PASSWORD inside the DOUBLE-QUOTES ACCORDINGLY
+			// Enter USERNAME(ADID) and PASSWORD inside the QUOTES ACCORDINGLY
 			'UserName': '', //Username
 			'Password': '' //Password
 		}, true);
@@ -148,7 +148,7 @@ casper.then(function () {
 	// ==================================================================
 
 
-	// Switch case could be utilized, however if/else is used to provide maximum customizability in terms of form field input, if on a particular day, a different field entry is desired
+	// Switch case could be utilized, however if/else is used to provide maximum customizability in terms of form field input, if on a particular day, a different field entry is desired.
 
 	// Currently Entering for TRAINING field - Change according to preference
 	// MONDAY

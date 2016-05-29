@@ -14,9 +14,11 @@ You could also use the Batch files (.bat) to execute the scripts by just double-
 
 ### Screenshots
 
-![Enter credentials](./screenshots/enterCredentials.JPG?raw=true "Enter credentials")
+![Main GIF showing full process](./screenshots/mainGIF-optimized.gif?raw=true "Main GIF showing full process")
 
-![Main GIF showing full process](./screenshots/mainGIF.gif?raw=true "Main GIF showing full process")
+<!--![Main GIF showing full process](./screenshots/mainGIF.gif?raw=true "Main GIF showing full process")-->
+
+![Enter credentials](./screenshots/enterCredentials.JPG?raw=true "Enter credentials")
 
 ![running command and showing "opened MyTime" message](./screenshots/openedMyTime.JPG?raw=true "showing 'opened mytime' message")
 
@@ -31,6 +33,10 @@ You could also use the Batch files (.bat) to execute the scripts by just double-
 * PhantomJS 2.1.1 - [Installaton instructions](http://phantomjs.org/download.html)
 * CasperJS 1.1.0 - [Installaton instructions](docs.casperjs.org/en/latest/installation.html)
 * Appropriate credentials (_obviously_ :stuck_out_tongue:)
+
+### Note
+The wipro external file is no longer needed as gateway is no longer necessary and the wipromytimeinternal.js file is sufficient for both internal and external networks.
+However I've left the external file as it is, for anyone who wishes to use gateway as it hasn't been scrapped yet.
 
 ### Batch file instructions
 * Make sure the .bat file and the appropriate .js file are in the same directory, or just make the path provided during execution is accurate.

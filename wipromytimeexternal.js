@@ -25,6 +25,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /*jslint node:true*/
 
 //=============================================================================
+//				NO LONGER NEEDED, INTERNAL FILE IS ENOUGH, USE IF YOU PREFER USING GATEWAY
+//=============================================================================
+
+
+//=============================================================================
 //	WIPRO MY TIME EXTERNAL NETWORK
 // ---------------------------------
 //	Hello! This file uses CasperJS and PhantomJS to automate some of the repetitive tasks of filling in the efforts in the Wipro™ MyTime website.
@@ -58,7 +63,7 @@ casper.then(function () {
 		casper.echo('input selector loaded');
 		try {
 			this.fillSelectors('#auth_form', {
-				// Enter USERNAME(ADID) and PASSWORD inside the DOUBLE-QUOTES ACCORDINGLY
+				// Enter USERNAME(ADID) and PASSWORD inside the QUOTES ACCORDINGLY
 				'#input_1': '', //Username
 				'#input_2': '' //Password
 			}, true);
