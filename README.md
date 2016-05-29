@@ -2,7 +2,7 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000?style=plastic)]() ![CasperJS version](https://img.shields.io/badge/CasperJS-1.1.0-red.svg?style=flat-square) ![PhantomJS version](https://img.shields.io/badge/PhantomJS-2.1.1-green.svg?style=flat-square) [![Maintenance](https://img.shields.io/maintenance/yes/2016.svg?maxAge=2592000?style=plastic)]()
 
-The MyTime Automator for Wipro™ MyTime uses the CasperJS framework to automate some of the repetitive tasks in filling the efforts in MyTime - so as to _save_ **your** time :innocent: :smile:.
+The MyTime Automator for Wipro™ MyTime uses the CasperJS framework to automate some of the repetitive tasks in filling the efforts in MyTime - so as to _save_ **your** time :innocent:.
 
 Open  the _wipromytimeinternal.js_ or _wipromytimeexternal.js_ file with your prefered text editor and enter your username and password in the appropriate areas inside the appropriate file. Then (*if* not using the .bat file) run the command:
 
