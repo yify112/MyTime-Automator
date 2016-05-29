@@ -10,7 +10,7 @@ Open  the _wipromytimeinternal.js_ or _wipromytimeexternal.js_ file with your pr
 
 with the appropriate filename in the command prompt. The script will automatically login with your credentials and open the MyTime app, then retrieve the attendance and update your efforts according to the specified values or default to entering the _Training section_ with your _Current Days attendance_.
 
-You could also use the Batch files (.bat) to execute the scripts by just double-clicking them, it would automatically open up command prompt and run the casperjs command, though this only works on windows. However the ability to just double-click a file and have the time updated automatically truly makes the process even smoother in my opinion :smile:.
+You could also use the Batch files (.bat) to execute the scripts by just double-clicking them, it would automatically open up command prompt and run the casperjs command, though this only works on windows. However the ability to just double-click a file and have the time updated automatically truly makes the process even smoother in my opinion.
 
 ### Screenshots
 
