@@ -5,7 +5,7 @@
 The MyTime Automator for Wipro™ MyTime uses the CasperJS framework to automate some of the repetitive tasks in filling the efforts in MyTime - so as to _save_ **your** time :innocent:.
 
 ## Usage
-Open  the _wipromytimeinternal.js_ ~~or _wipromytimeexternal.js_~~(refer [Note](#Note) below) file with your prefered text editor and enter your username and password in the appropriate areas inside the ~~appropriate~~ file. Then run the command:
+Open  the _wipromytimeinternal.js_ ~~or _wipromytimeexternal.js_~~(refer [Note](#note) below) file with your prefered text editor and enter your username and password in the appropriate areas inside the ~~appropriate~~ file. Then run the command:
 
 ` casperjs file_name.js `
 
