@@ -14,7 +14,7 @@ with the appropriate filename in the command prompt. The script will automatical
 ##### Batch File Instructions
 You could also use the Batch files (.bat) to execute the scripts by just double-clicking them, it would automatically open up command prompt and run the casperjs command, however the credentials will still have to be entered, though this only works on windows.
 
-Make sure the .bat file and the appropriate .js file are in the same directory and that the correct .bat file is run in accordance with the correct .js file, i.e. internalBatch.bat -> wipromytimeinternal.js ~~and externalBatch.bat -> wipromytimeexternal.js~~, or just make the path provided during execution is accurate.
+Make sure the .bat file and the appropriate .js file are in the same directory and that the correct .bat file is run in accordance with the correct .js file, i.e. internalBatch.bat -> wipromytimeinternal.js ~~and externalBatch.bat -> wipromytimeexternal.js~~, or just edit the batch file with the right path.
 
 The ability to just double-click a file and have the time updated automatically truly makes the process even smoother in my opinion. Just double-click, sit back, relax and enjoy! :bowtie:
 

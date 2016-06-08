@@ -27,7 +27,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //=============================================================================
 //	WIPRO MY TIME INTERNAL NETWORK
 // ---------------------------------
-//	Hello! This file uses CasperJS and PhantomJS to automate some of the repetitive tasks of filling in the efforts in the Wipro™ MyTime website.
+//	Hello! This file uses CasperJS and PhantomJS to automate some of the repetitive 
+//	tasks of filling in the efforts in the Wipro™ MyTime website.
 //=============================================================================
 
 
@@ -43,7 +44,7 @@ var casper = require('casper').create({
 
 //	Begin
 //	Start wipro internal url
-casper.start('http://mywipro.wipro.com/irj/portal', function () {
+casper.start('https://mywipro.wipro.com/irj/portal', function () {
 	"use strict";
 	casper.echo("Page title is: " + casper.getTitle());
 	// Change viewport according to desired resolution for photographs
@@ -82,7 +83,8 @@ casper.then(function () {
 casper.then(function () {
 	"use strict";
 	casper.waitForSelector('.appstore_btn', function () {
-		// Could use casper.click here however it does not succeed in certain cases, use if desired
+		// Could use casper.click here however it does not succeed in certain cases, 
+		// use if desired
 		/*try {
 			casper.click('ul#myFavId a[href="/irj/portal?NavigationTarget=navurl://e5d876a160ab08c343ce57c12518b5b6"]');
 			casper.echo('Clicked on myTime');
@@ -90,7 +92,7 @@ casper.then(function () {
 			this.echo(e);
 		}*/
 		try {
-			casper.thenOpen("http://mywipro.wipro.com/irj/portal?NavigationTarget=navurl://e5d876a160ab08c343ce57c12518b5b6", function () {
+			casper.thenOpen("https://mywipro.wipro.com/irj/portal?NavigationTarget=navurl://e5d876a160ab08c343ce57c12518b5b6", function () {
 				casper.echo('Successfully opened MyTime URL');
 			});
 		} catch (e) {

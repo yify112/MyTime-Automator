@@ -25,7 +25,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /*jslint node:true*/
 
 //=============================================================================
-//				NO LONGER NEEDED, INTERNAL FILE IS ENOUGH, USE IF YOU PREFER USING GATEWAY
+//				NO LONGER NEEDED, INTERNAL FILE IS ENOUGH, KEPT JUST FOR INFORMATION
+//				FILE NOT UPDATED, NO LONGER MAINTAINED EITHER, USE INTERNAL FILE.
 //=============================================================================
 
 
