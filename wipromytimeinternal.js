@@ -211,7 +211,7 @@ casper.then(function () {
 casper.then(function () {
 	"use strict";
 	try {
-		casper.click('button#btnTMSSubmit');
+		casper.click('button#btnTMSSubmit_wt');
 		casper.wait(1000, function () {
 			casper.capture('submitted.png');
 		});
