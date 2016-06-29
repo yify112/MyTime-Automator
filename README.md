@@ -37,7 +37,7 @@ The ability to just double-click a file and have the time updated automatically 
 ![CasperJS version](https://img.shields.io/badge/CasperJS-1.1.0-red.svg?style=flat-square)
 
 * PhantomJS 2.1.1 - [Installaton instructions](http://phantomjs.org/download.html)
-* CasperJS 1.1.0 - [Installaton instructions](docs.casperjs.org/en/latest/installation.html)
+* CasperJS 1.1.0 - [Installaton instructions](http://docs.casperjs.org/en/latest/installation.html)
 * Appropriate credentials (_obviously_ :stuck_out_tongue:)
 
 ### Note
